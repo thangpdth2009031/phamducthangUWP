@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -29,6 +30,8 @@ namespace PhamDucThangT2009M1UWP.Pages
         {
             this.InitializeComponent();
             this.Loaded += AddContacts_Loaded;
+            SharedShadow.Receivers.Add(BackgroundGrid);
+            AddForm.Translation += new Vector3(120, 0, 32);
         }
 
         private void AddContacts_Loaded(object sender, RoutedEventArgs e)

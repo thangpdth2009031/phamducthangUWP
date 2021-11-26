@@ -36,7 +36,7 @@ namespace PhamDucThangT2009M1UWP.Pages
             if (result.Count == 0)
             {
                 ContentDialog contentDialog = new ContentDialog();
-                contentDialog.Title = "‘Contact not found";
+                contentDialog.Title = "Contact not found";               
                 contentDialog.PrimaryButtonText = "Try again!";
                 await contentDialog.ShowAsync();
             }

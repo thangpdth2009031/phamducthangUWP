@@ -94,6 +94,9 @@
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Pages\AddContacts.xbf">
       <PackagePath>Pages\AddContacts.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Pages\NavigationView.xbf">
+      <PackagePath>Pages\NavigationView.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Pages\SearchContact.xbf">
       <PackagePath>Pages\SearchContact.xbf</PackagePath>
     </AppxPackagedFile>

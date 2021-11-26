@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-11-26T09:24:26.305</Modified>
+      <Modified>2021-11-26T10:35:01.599</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\PhamDucThangT2009M1UWP.exe">
       <PackagePath>entrypoint\PhamDucThangT2009M1UWP.exe</PackagePath>
-      <Modified>2021-11-26T09:24:25.852</Modified>
+      <Modified>2021-11-26T10:35:01.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\.nuget\packages\microsoft.data.sqlite.core\5.0.12\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
@@ -110,23 +110,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\PhamDucThangT2009M1UWP.xr.xml">
       <PackagePath>PhamDucThangT2009M1UWP.xr.xml</PackagePath>
-      <Modified>2021-11-26T03:57:04.308</Modified>
+      <Modified>2021-11-26T10:35:01.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-11-26T09:24:25.759</Modified>
+      <Modified>2021-11-26T10:12:27.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-11-26T09:24:25.759</Modified>
+      <Modified>2021-11-26T10:12:27.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Pages\AddContacts.xbf">
       <PackagePath>Pages\AddContacts.xbf</PackagePath>
-      <Modified>2021-11-26T09:24:25.759</Modified>
+      <Modified>2021-11-26T10:35:01.297</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Pages\NavigationView.xbf">
+      <PackagePath>Pages\NavigationView.xbf</PackagePath>
+      <Modified>2021-11-26T10:12:27.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Pages\SearchContact.xbf">
       <PackagePath>Pages\SearchContact.xbf</PackagePath>
-      <Modified>2021-11-26T09:24:25.759</Modified>
+      <Modified>2021-11-26T10:12:27.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -134,11 +138,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-11-26T02:49:20.463</Modified>
+      <Modified>2021-11-26T09:42:48.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trieu\source\repos\PhamDucThangT2009M1UWP\PhamDucThangT2009M1UWP\bin\x86\Debug\Core\PhamDucThangT2009M1UWP.exe">
       <PackagePath>PhamDucThangT2009M1UWP.exe</PackagePath>
-      <Modified>2021-11-26T09:24:26.300</Modified>
+      <Modified>2021-11-26T10:35:01.598</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
