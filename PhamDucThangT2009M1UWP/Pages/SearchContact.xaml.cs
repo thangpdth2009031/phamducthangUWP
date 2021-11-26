@@ -1,6 +1,7 @@
 ﻿using PhamDucThangT2009M1UWP.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -29,9 +30,16 @@ namespace PhamDucThangT2009M1UWP.Pages
             this.InitializeComponent();            
         }
         
-        private  void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var result = contactModel.SearchByKeyword(txtName.Text);
+            if (result.Count == 0)
+            {
+                ContentDialog contentDialog = new ContentDialog();
+                contentDialog.Title = "‘Contact not found";
+                contentDialog.PrimaryButtonText = "Try again!";
+                await contentDialog.ShowAsync();
+            }
             MyListView.ItemsSource = result;
         }
     }
