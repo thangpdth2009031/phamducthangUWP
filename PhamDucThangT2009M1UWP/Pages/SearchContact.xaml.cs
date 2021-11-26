@@ -26,19 +26,13 @@ namespace PhamDucThangT2009M1UWP.Pages
         private ContactModel contactModel = new ContactModel();
         public SearchContact()
         {
-            this.InitializeComponent();
-            this.Loaded += SearchContact_Loaded;
+            this.InitializeComponent();            
         }
-
-        private void SearchContact_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
+        
         private  void Button_Click(object sender, RoutedEventArgs e)
         {
-            var result = contactModel.SearchByKeyword(txtName.Text);           
-            MyListView.ItemsSource = result;            
+            var result = contactModel.SearchByKeyword(txtName.Text);
+            MyListView.ItemsSource = result;
         }
     }
 }

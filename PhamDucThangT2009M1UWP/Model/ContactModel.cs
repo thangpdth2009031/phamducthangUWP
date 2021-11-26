@@ -71,7 +71,7 @@ namespace PhamDucThangT2009M1UWP.Model
         }
 
 
-        public async Task<List<Contact>>  SearchByKeyword(string keyword)
+        public List<Contact> SearchByKeyword(string keyword)
         {
             List<Contact> contacts = new List<Contact>();
             try
@@ -82,9 +82,11 @@ namespace PhamDucThangT2009M1UWP.Model
                     cnn.Open();
                     //Tạo câu lệnh
                     SqliteCommand cmd = new SqliteCommand(_selectStatementWithConditionTemplate, cnn);
+                    
                     cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
                     //Bắn lệnh vào và lấy dữ liệu.
-                    var reader = cmd.ExecuteReader();                   
+                    var reader = cmd.ExecuteReader();
+                    
                     while (reader.Read())
                     {
                         var phoneNumber = Convert.ToString(reader["PhoneNumber"]);
@@ -93,16 +95,9 @@ namespace PhamDucThangT2009M1UWP.Model
                         {
                             phoneNumber = phoneNumber, 
                             name = name
-                        };                       
-                        contacts.Add(contact);                        
+                        };
+                        contacts.Add(contact);
                     }
-                    if (reader == null)
-                    {
-                        ContentDialog contentDialog = new ContentDialog();
-                        contentDialog.Title = "Khong tim thay";
-                        contentDialog.PrimaryButtonText = "Khong tim thay";
-                        await contentDialog.ShowAsync();
-                    }                   
                 }
             }
             catch (Exception e)
