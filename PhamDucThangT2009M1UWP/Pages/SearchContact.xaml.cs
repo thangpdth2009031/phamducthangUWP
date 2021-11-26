@@ -32,14 +32,13 @@ namespace PhamDucThangT2009M1UWP.Pages
 
         private void SearchContact_Loaded(object sender, RoutedEventArgs e)
         {
-            MyListView.ItemsSource = contactModel.FindAll();
+            
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private  void Button_Click(object sender, RoutedEventArgs e)
         {
-            var result = contactModel.SearchByKeyword(txtPhoneNumber.Text);
-           
-            MyListView.ItemsSource = result;
+            var result = contactModel.SearchByKeyword(txtName.Text);           
+            MyListView.ItemsSource = result;            
         }
     }
 }

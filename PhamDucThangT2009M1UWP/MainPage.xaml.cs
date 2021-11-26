@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhamDucThangT2009M1UWP.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,16 @@ namespace PhamDucThangT2009M1UWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private ContactModel contactModel = new ContactModel();
         public MainPage()
         {
             this.InitializeComponent();
+            this.Loaded += MainPage_Loaded;
+        }
+
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            MyListView.ItemsSource = contactModel.FindAll();
         }
     }
 }

@@ -11,7 +11,7 @@ namespace PhamDucThangT2009M1UWP.Model
 {
     public class ContactModel
     {           
-        private static string _selectStatementWithConditionTemplate = "SELECT * FROM contacts WHERE PhoneNumber like @keyword";
+        private static string _selectStatementWithConditionTemplate = "SELECT * FROM contacts WHERE Name like @keyword";
         public ContactModel()
         {
             DatabaseMigration.UpdateDatabase();
@@ -71,7 +71,7 @@ namespace PhamDucThangT2009M1UWP.Model
         }
 
 
-        public List<Contact> SearchByKeyword(string keyword)
+        public async Task<List<Contact>>  SearchByKeyword(string keyword)
         {
             List<Contact> contacts = new List<Contact>();
             try
@@ -84,7 +84,7 @@ namespace PhamDucThangT2009M1UWP.Model
                     SqliteCommand cmd = new SqliteCommand(_selectStatementWithConditionTemplate, cnn);
                     cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
                     //Bắn lệnh vào và lấy dữ liệu.
-                    var reader = cmd.ExecuteReader();
+                    var reader = cmd.ExecuteReader();                   
                     while (reader.Read())
                     {
                         var phoneNumber = Convert.ToString(reader["PhoneNumber"]);
@@ -93,10 +93,16 @@ namespace PhamDucThangT2009M1UWP.Model
                         {
                             phoneNumber = phoneNumber, 
                             name = name
-                        };
-                       
+                        };                       
                         contacts.Add(contact);                        
                     }
+                    if (reader == null)
+                    {
+                        ContentDialog contentDialog = new ContentDialog();
+                        contentDialog.Title = "Khong tim thay";
+                        contentDialog.PrimaryButtonText = "Khong tim thay";
+                        await contentDialog.ShowAsync();
+                    }                   
                 }
             }
             catch (Exception e)
